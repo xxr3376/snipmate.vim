@@ -1,5 +1,6 @@
 snippet #!
 	#!/usr/bin/env python
+	#! -*- encoding=utf-8
 
 snippet imp
 	import ${1:module}
@@ -7,8 +8,8 @@ snippet imp
 snippet docs
 	'''
 	File: ${1:`Filename('$1.py', 'foo.py')`}
-	Author: ${2:`g:snips_author`}
-	Description: ${3}
+	Author: ${2:`g:snips_author`} <${3:`g:snips_email`}>
+	Description: ${4}
 	'''
 snippet wh
 	while ${1:condition}:
